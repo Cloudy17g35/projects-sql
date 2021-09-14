@@ -1,7 +1,3 @@
-COPY rolling_stone 
-FROM 'albumlist.csv' 
-WITH (FORMAT CSV, HEADER);
-
   DROP TABLE rolling_stone; 
 CREATE TABLE rolling_stone(
 number SERIAL,
@@ -11,6 +7,11 @@ artist VARCHAR(200),
  genre VARCHAR(200),
 subgenre VARCHAR(200)
 );
+
+
+COPY rolling_stone 
+FROM 'albumlist.csv' 
+WITH (FORMAT CSV, HEADER);
 
 
 -- Selecting the first 5 values
