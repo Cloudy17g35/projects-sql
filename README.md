@@ -1,1 +1,3 @@
-I use SQL to examine the data and make simple but fun projects
+# repository with SQL projects
+
+Data analysis using SQL
